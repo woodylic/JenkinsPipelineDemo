@@ -5,6 +5,8 @@ library identifier: 'JenkinsSharedLibraryDemo@master', retriever: modernSCM(
    remote: 'https://github.com/woodylic/JenkinsSharedLibraryDemo.git'])
 
 sharedPipeline {
-    param1 = 'param1'
-    param2 = 'param2'
+    repository = 'param1'
+    tag = 'param2'
+    registry = 'hub.docker.com/woodylic'
+    dockerfilePath = '.'
 }
